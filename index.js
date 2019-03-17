@@ -14,7 +14,7 @@ class git_call_test{
 
    async newTask(conv_id, obj){
       return axios.post(this.url, {"ops":[{"type":"create",conv_id,obj,"action":"user",
-        "data":{"url":"https://www.corezoid.com/api/1/json/public/524878/35e222c0a43bd7a717937f44e471fc050805d0b4","conv_id":"524878","obj":"task"},"ref":12345}]})
+        "data":{"url":"https://www.corezoid.com/api/1/json/public/524878/35e222c0a43bd7a717937f44e471fc050805d0b4","conv_id":"524878","obj":"task"},"ref":"12345"}]})
    }
 
 }
