@@ -1,0 +1,12 @@
+{
+  "name": "test-example",
+  "version": "1.0.0",
+  "description": "test version",
+  "main": "index.js",
+  "author": "sdhsddh",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11"
+  }
+}
