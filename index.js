@@ -3,7 +3,7 @@ const axios = require("axios");
 const _ = require("lodash");
 
 
-class HelloWorld{
+class test{
    constructor(url){
      if (!_.isString(url)){
        throw Error("url must be as String")
@@ -12,15 +12,12 @@ class HelloWorld{
      this.url = url;
    }
 
-   async getScheme(obj_id, obj_type){
-      return axios.post(this.url, {"ops":[{"type":"get", "obj":"obj_scheme", obj_id, obj_type}]})
-   }
-
-   getMe(){
-     return "Привет, " + this.name
+   async newTask(conv_id, obj){
+      return axios.post(this.url, {"ops":[{"type":"create",conv_id,obj,"action":"user",
+        "data":{"url":"https://www.corezoid.com/api/1/json/public/524878/35e222c0a43bd7a717937f44e471fc050805d0b4","conv_id":"524878","obj":"task"},"ref":randomInteger(123456, 999999)}]})
    }
 
 }
 
 
-module.exports = HelloWorld;
+module.exports = test;

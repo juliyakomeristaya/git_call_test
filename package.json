@@ -1,9 +1,9 @@
 {
-  "name": "test-example",
+  "name": "git_call_test",
   "version": "1.0.0",
   "description": "test version",
   "main": "index.js",
-  "author": "sdhsddh",
+  "author": "Juliya",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
